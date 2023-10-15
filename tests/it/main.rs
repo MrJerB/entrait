@@ -22,6 +22,7 @@ mod delegation_modes;
 mod dependency_inversion;
 mod mockall;
 mod simple;
+mod issue29;
 
 #[cfg(feature = "unimock")]
 mod unimock;

@@ -6,24 +6,10 @@
 
 extern crate proc_macro;
 
+use entrait_core::*;
+use entrait_core::input::Input;
 use proc_macro::TokenStream;
 
-mod analyze_generics;
-mod attributes;
-mod entrait_fn;
-mod entrait_impl;
-mod entrait_trait;
-mod fn_delegation_codegen;
-mod generics;
-mod idents;
-mod input;
-mod opt;
-mod signature;
-mod static_async_trait;
-mod token_util;
-mod trait_codegen;
-
-use input::Input;
 use opt::AsyncStrategy;
 use opt::Opts;
 

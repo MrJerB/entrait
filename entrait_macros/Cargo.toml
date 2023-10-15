@@ -14,6 +14,7 @@ categories = ["rust-patterns"]
 syn = { version = "2.0.8", features = ["full", "visit-mut"] }
 quote = "1"
 proc-macro2 = "1"
+entrait_core = { path = "../entrait_core" }
 
 [lib]
 proc-macro = true

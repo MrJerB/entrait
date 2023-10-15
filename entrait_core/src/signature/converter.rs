@@ -148,6 +148,7 @@ impl<'a> SignatureConverter<'a> {
         for param in params.into_iter() {
             match &param {
                 syn::GenericParam::Type(_) => {}
+                syn::GenericParam::Lifetime(_) => {}
                 _ => {
                     generics.params.push(param);
                 }
